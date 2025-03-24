@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        text-align: center;
+        margin: 20px auto;
+        background-color: antiquewhite;
+        box-shadow: 4px 8px 16px gray;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: large;
+        font-family: sans-serif;
+      }
+
+      input[type="submit"] {
+        padding: 5px 15px;
+        background-color: blueviolet;
+        border-radius: 10px;
+      }
+
+      input[type="submit"]:active {
+        padding: 5px 15px;
+        background-color: blue;
+        border-radius: 10px;
+        color: aqua;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <table width="500px" height="400px">
+        <legend>User Form</legend>
+        <form action="/" method="get">
+          <tr>
+            <td colspan="2">
+              <h1>Student Form</h1>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="userName">User Name:</label></td>
+            <td>
+              <input
+                type="text"
+                name="userName"
+                id="userName "
+                placeholder="Enter your name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                placeholder="Enter your Email"
+                value="Abc@gmail.com"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pass">password:</label></td>
+            <td>
+              <input
+                type="password"
+                name="pass"
+                id="pass"
+                minlength="10"
+                maxlength="10"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobile">mobile:</label></td>
+            <td>
+              <input
+                type="text"
+                name="mobile"
+                id="mobile"
+                pattern="[7-9]{1}[0-9]{9}"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Gender:</label></td>
+            <td>
+              <input type="radio" name="age id="age">Male <input type="radio"
+              name="age id="age">Female
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="Languages">Languages:</label></td>
+            <td>
+              <input type="checkbox" name="Languages" id="Languages" /> Marathi
+              <input type="checkbox" name="Languages" id="Languages" /> Hindi
+              <input type="checkbox" name="Languages" id="Languages" /> English
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="Country">Country</label>
+            </td>
+            <td>
+              <select
+                name="Country"
+                id="Country"
+                style="width: 52%; padding: 3px 0px; font-weight: bold"
+              >
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="countries">countries</label>
+            </td>
+            <td>
+              <input type="text " list="countries" name="countries" />
+              <datalist
+                name="countries"
+                id="countries"
+                style="width: 100%; font-weight: bold"
+              >
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+              </datalist>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="textArea">Feedback:</label></td>
+            <td>
+              <textarea name="textArea" id="textArea" cols="30" rows="10">
+              </textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+        </form>
+      </table>
+    </fieldset>
+  </body>
+</html>
